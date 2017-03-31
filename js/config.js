@@ -17,16 +17,12 @@
  * size - Number of results to display at a time when pagination is enabled.
  * search_delay - Delay between actual search request in ms. Reduces number of queries to cluster by not making a request on each keystroke. 
  */
-/**
+
 var CALACA_CONFIGS = {
-	url: "http://localhost:9200",
+	url: "https://hitwater.github.io/test/",
 	index_name: "twitter",
 	type: "tweet",
 	size: 10,
 	search_delay: 500
 }
 
-*/
-var host = "https://6fam5f32gu:tba8fwuj9p@guimings-first-sandb-699906627.us-west-2.bonsaisearch.ne"; //Ex: http://ec2-123-aws.com
-var indexName = "media"; //Ex: twitter
-var docType = "book"; //Ex: tweet
