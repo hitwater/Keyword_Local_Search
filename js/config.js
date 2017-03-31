@@ -19,9 +19,9 @@
  */
 
 var CALACA_CONFIGS = {
-	url: "https://hitwater.github.io/test/",
-	index_name: "twitter",
-	type: "tweet",
+	url: "https://6fam5f32gu:tba8fwuj9p@guimings-first-sandb-699906627.us-west-2.bonsaisearch.net",
+	index_name: "media",
+	type: "book",
 	size: 10,
 	search_delay: 500
 }
