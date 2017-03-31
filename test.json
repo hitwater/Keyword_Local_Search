@@ -1,0 +1,13 @@
+
+{
+  "name" : "twitter",
+  "cluster_name" : "elasticsearch",
+  "version" : {
+    "number" : "2.4.0",
+    "build_hash" : "079e104a99267f24d3689297eb16466170b00ebc",
+    "build_timestamp" : "2016-10-04T20:50:33Z",
+    "build_snapshot" : false,
+    "lucene_version" : "5.5.2"
+  },
+  "tagline" : "You Know, for Search"
+}
