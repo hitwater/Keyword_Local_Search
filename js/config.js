@@ -18,11 +18,8 @@
  * search_delay - Delay between actual search request in ms. Reduces number of queries to cluster by not making a request on each keystroke. 
  */
 
-var CALACA_CONFIGS = {
-	url: "https://f6inr26njj:3pkl61s1sr@acme-production-7730545172.us-west-2.bonsaisearch.net",
-	index_name: "acme-production",
-	type: "test",
-	size: 10,
-	search_delay: 500
-}
+var host = "https://f6inr26njj:3pkl61s1sr@acme-production-7730545172.us-west-2.bonsaisearch.net"; //Ex: http://ec2-123-aws.com
+var indexName = "acme-production"; //Ex: twitter
+var docType = "test"; //Ex: tweet
+
 
