@@ -14,8 +14,9 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
     //Set default url if not configured
     //CALACA_CONFIGS.url = (CALACA_CONFIGS.url.length > 0)  ? CALACA_CONFIGS.url : $location.protocol() + '://' +$location.host() + ":9200";
 
-    var esHost = (host.length > 0 ) ? host : $location.host();
-    var client = elasticsearch({ host: esHost });
+    CALACA_CONFIGS.url = (CALACA_CONFIGS.url.length > 0)  ? CALACA_CONFIGS.url : $location.protocol() + '://' +$location.host() + ":9200";
+
+    var client = elasticsearch({ host: CALACA_CONFIGS.url });
 
     //var client = elasticsearch({ host: CALACA_CONFIGS.url });
 
