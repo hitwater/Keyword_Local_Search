@@ -27,6 +27,10 @@ var CALACA_CONFIGS = {
 }
 
 */
-var host = "https://6fam5f32gu:tba8fwuj9p@guimings-first-sandb-699906627.us-west-2.bonsaisearch.ne"; //Ex: http://ec2-123-aws.com
-var indexName = "media"; //Ex: twitter
-var docType = "book"; //Ex: tweet
+var CALACA_CONFIGS = {
+	url: "https://f6inr26njj:3pkl61s1sr@acme-production-7730545172.us-west-2.bonsaisearch.net",
+	index_name: "acme-production",
+	type: "test",
+	size: 10,
+	search_delay: 500
+}
