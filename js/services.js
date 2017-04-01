@@ -12,11 +12,8 @@
 Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, elasticsearch, $location){
 
     //Set default url if not configured
-    CALACA_CONFIGS.url = (CALACA_CONFIGS.url.length > 0)  ? CALACA_CONFIGS.url : $location.protocol() + '://' +$location.host() + ":9200";
-
-
-    var client = elasticsearch({ host: CALACA_CONFIGS.url });
-
+   var esHost = (host.length > 0 ) ? host : $location.host();
+   var client = elasticsearch({ host: esHost });
     var search = function(query, mode, offset){
 
         var deferred = $q.defer();
@@ -27,10 +24,10 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
         }
 
         client.search({
-                "index": CALACA_CONFIGS.index_name,
-                "type": CALACA_CONFIGS.type,
+                "index": index_name,
+                "type": type,
                 "body": {
-                    "size": CALACA_CONFIGS.size,
+                    "size": size,
                     "from": offset,
                     "query": {
                         "query_string": {
