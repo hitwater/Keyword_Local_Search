@@ -29,8 +29,8 @@ var CALACA_CONFIGS = {
 */
 var CALACA_CONFIGS = {
 	url: "https://9fcxr1arux:f0o46t98ap@media-774595108.us-west-2.bonsaisearch.net",
-	index_name: "acme-production",
-	type: "test",
+	index_name: "media",
+	type: "book",
 	size: 10,
 	search_delay: 500
 }
