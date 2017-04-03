@@ -21,7 +21,7 @@
 */
 var CALACA_CONFIGS = {
 	url: "https://p2e6xi2bpa:pd08dhcbvk@music-4921328022.us-west-2.bonsaisearch.net",
-	index_name: "media",
+	index_name: "music",
 	type: "lyrics",
 	size: 10,
 	search_delay: 500
