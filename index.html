@@ -29,8 +29,11 @@
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
-      <h2>{{result.title}}</h2>
-      <p>{{result.author}}</p>
+      <h2>{{result.song}}</h2>
+      <p>{{result.lyrics}}</p>
+      <p>{{result.artist}}</p>
+      <p>{{result.year}}</p>
+      <p>{{result.snippet}}</p>  
     </article>
   </section>
   <section class='pagination-controls'>
