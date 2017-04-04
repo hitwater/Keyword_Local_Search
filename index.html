@@ -29,10 +29,10 @@
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
-      <h2>{{result.song}}</h2>
-      <p>{{result.lyrics}}</p>
-      <p>{{result.artist}}</p>
-      <p>{{result.year}}</p>
+      <h2>Song : {{result.song}}</h2>
+      <p>Lyrics : {{result.lyrics}}</p>
+      <p>Artist : {{result.artist}}</p>
+      <p>Year : {{result.year}}</p>
       <p>{{result.snippet}}</p>  
     </article>
   </section>
